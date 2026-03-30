@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baking Trivia | Sariah Clark</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #fff7fb 0%, #f9e4ec 100%);
+      color: #2b2b2b;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ecd7df;
+      padding: 18px 0;
+    }
+
+    .nav-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .site-name {
+      text-decoration: none;
+      color: #8f5f73;
+      font-size: 2.2rem;
+      font-family: 'Tenor Sans', serif;
+      margin: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #6e6870;
+      margin-left: 18px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 10px 18px;
+      border-radius: 28px;
+      display: inline-block;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #f6dde6;
+      color: #8f5f73;
+    }
+
+    .active-page {
+      background-color: #1f1f1f;
+      color: white !important;
+    }
+
+    .app-container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid #f0d7e0;
+      border-radius: 28px;
+      box-shadow: 0 18px 40px rgba(166, 107, 134, 0.12);
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Tenor Sans', serif;
+      font-size: 2.8rem;
+    }
+
+    .answer-btn {
+      border: none;
+      background-color: #b85c7d;
+      color: white;
+      padding: 0.9rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 600;
+      margin: 0.5rem;
+      cursor: pointer;
+    }
+
+    .answer-btn:hover {
+      background-color: #9f4d6b;
+    }
+
+    #result {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #7c4c5f;
+    }
+
+    @media (max-width: 900px) {
+      .nav-container {
+        justify-content: center;
+      }
+
+      .nav-links {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <h2 class="site-name">Sariah Clark</h2>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <a href="scratch.html">Baking</a>
+      <a href="app.html" class="active-page">Baking Trivia</a>
+    </div>
+  </div>
+</nav>
+
+<main class="app-container">
+  <h1>Baking Trivia</h1>
+  <p>What temperature does water boil at sea level?</p>
+
+  <button class="answer-btn" onclick="checkAnswer('correct')">100 C</button>
+  <button class="answer-btn" onclick="checkAnswer('wrong')">80 C</button>
+  <button class="answer-btn" onclick="checkAnswer('wrong')">120 C</button>
+
+  <p id="result"></p>
+</main>
+
+<script>
+  function checkAnswer(choice) {
+    const result = document.getElementById('result');
+    if (choice === 'correct') {
+      result.textContent = 'Correct! Water boils at 100 C at sea level.';
+    } else {
+      result.textContent = 'Not quite. Try again!';
+    }
+  }
+</script>
+
+</body>
+</html>

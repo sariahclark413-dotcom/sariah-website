@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baking | Sariah Clark</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="styles/scratch.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <h2 class="site-name">Sariah Clark</h2>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <a href="scratch.html" class="active-page">Baking</a>
+      <a href="app.html">Baking Trivia</a>
+    </div>
+  </div>
+</nav>
+
+<main class="scratch-main">
+  <section class="hero-box">
+    <div class="hero-text">
+      <h1 id="top">My Baking Passion</h1>
+      <p>
+        Baking is one of my favorite creative hobbies. I love trying new recipes, making desserts
+        for other people, and turning simple ingredients into something thoughtful and memorable.
+        It combines creativity, patience, and attention to detail.
+      </p>
+      <a class="jump-button" href="#video">Jump to video</a>
+    </div>
+
+    <div class="hero-image-wrap">
+      <img src="images/baking.jpeg" alt="A homemade dessert by Sariah" class="feature-image">
+    </div>
+  </section>
+
+  <section class="content-card">
+    <h2>Favorite Desserts</h2>
+    <ol>
+      <li>
+        Favorite Desserts
+        <ul>
+          <li>Brownies with ice cream</li>
+          <li>Chocolate cake</li>
+          <li>Toffee cookies</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section id="video" class="content-card">
+    <h2>Baking Video</h2>
+
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/_ZnH8eiJbPo"
+        title="Baking video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p><a href="https://www.youtube.com/watch?v=_ZnH8eiJbPo" target="_blank">Open on YouTube</a></p>
+  </section>
+
+  <section class="content-card">
+    <h2>Great British Bake Off Data</h2>
+    <p class="note-text">This is a live interactive Tableau embed.</p>
+
+    <div class='tableauPlaceholder' id='viz1774888617337' style='position: relative'>
+      <noscript>
+        <img alt='Story' src='https://public.tableau.com/static/images/Gr/GreatBritishBakeOffGBBO/Story/1.png' style='border: none'>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'>
+        <param name='embed_code_version' value='3'>
+        <param name='site_root' value=''>
+        <param name='name' value='GreatBritishBakeOffGBBO/Story'>
+        <param name='tabs' value='no'>
+        <param name='toolbar' value='yes'>
+        <param name='static_image' value='https://public.tableau.com/static/images/Gr/GreatBritishBakeOffGBBO/Story/1.png'>
+        <param name='animate_transition' value='yes'>
+        <param name='display_static_image' value='yes'>
+        <param name='display_spinner' value='yes'>
+        <param name='display_overlay' value='yes'>
+        <param name='display_count' value='yes'>
+        <param name='language' value='en-US'>
+      </object>
+    </div>
+
+    <script type="text/javascript">
+      var divElement = document.getElementById('viz1774888617337');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = '800px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+</main>
+
+</body>
+</html>
